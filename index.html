@@ -41,7 +41,7 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/LoopSplat_logo.webp">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -160,13 +160,24 @@
                                           <span>Code</span>
                                       </a>
                                   </span>
+
                                   <span class="link-block">
-                                    <a href="https://youtu.be/"
+                                    <a href="#mesh"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                          <i class="fa-solid fa-cubes"></i>
+                                        </span>
+                                        <span>Mesh</span>
+                                    </a>
+                                </span>
+
+                                  <span class="link-block">
+                                    <a 
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-youtube"></i>
                                         </span>
-                                        <span>Video (coming)</span>
+                                        <span>Video</span>
                                     </a>
                                 </span>
                               </div>
@@ -179,22 +190,30 @@
   </body>
   </html>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <!-- <video class="video" width="100%" id="xyalias6" loop playsinline autoplay muted src="resources/nice_vs_ours.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video> -->
-          <canvas height=0 class="videoMerge" id="xyalias6Merge"></canvas>
-      
-          <h2 class="subtitle has-text-centered" style="margin-top: 15px">
-            TL;DR: We present LoopSplat, a dense RGB-D SLAM system that uses 3D Gaussian Splats as a <b>unified</b> scene representation for tracking, mapping and maintaining <b>global consistency</b>. 
-          </h2>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <video 
+              class="video" 
+              width="100%" 
+              id="xyalias6" 
+              loop 
+              playsinline 
+              autoplay 
+              muted 
+              src="resources/loopsplat_0054_vis.mp4"
+            ></video>
+        
+            <h2 class="subtitle has-text-centered" style="margin-top: 15px">
+              TL;DR: We present LoopSplat, a dense RGB-D SLAM system that uses 3D Gaussian Splats as a <b>unified</b> scene representation for tracking, mapping and maintaining <b>global consistency</b>. 
+            </h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <section class="section">
@@ -260,11 +279,11 @@
     <!-- Results. -->
     <div class="columns is-centered ">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Additional Results</h2>
+        <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Qualitative Results</h2>
 
         <!-- <h3 class="title is-4">Replica Dataset</h3> -->
 
-        <h3 class="title is-5">Mesh Reconstruction</h3>
+        <h3 class="title is-5" id="mesh">Mesh Reconstruction</h3>
         <h3 class="title is-6">Please make sure "use hardware acceleration when available" is enabled for chrome and WebGL is enabled in Safari.</h3>
         <div class="embed-responsive embed-responsive-16by9">
 
